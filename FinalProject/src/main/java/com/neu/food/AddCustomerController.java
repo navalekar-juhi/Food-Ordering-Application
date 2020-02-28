@@ -52,9 +52,9 @@ public class AddCustomerController {
 		Email email = new SimpleEmail();
 		email.setHostName("smtp.googlemail.com");
 		email.setSmtpPort(465);
-		email.setAuthenticator(new DefaultAuthenticator("juhitwilight@gmail.com", "edwardbella"));
+		email.setAuthenticator(new DefaultAuthenticator("senderemail@gmail.com", "senderpassword"));
 		email.setSSLOnConnect(true);
-		email.setFrom("juhitwilight@gmail.com");
+		email.setFrom("senderemail@gmail.com");
 		email.setSubject("Sign Up Successful");
         email.setMsg("Welcome to the Foodie\n\n Your account has been successfully created.");
 		email.addTo(ct.getEmailId());
